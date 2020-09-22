@@ -1,1 +1,31 @@
-name: oh hey let's see if this works
+indexJobs:
+  - root: a/
+    index:
+      indexer: sourcegraph/lsif-go:latest
+      arguments:
+        - lsif-go
+        - --no-animation
+  - root: b/
+    install:
+      indexer: alpine:latest
+      commands:
+        - ls
+        - &&
+        - pwd
+        - &&
+        - echo
+        - &&
+        - "golly!"
+        - &&
+        - ls /
+    index:
+      indexer: sourcegraph/lsif-go:latest
+      arguments:
+        - lsif-go
+        - --no-animation
+  - root: c/
+    index:
+      indexer: sourcegraph/lsif-go:latest
+      arguments:
+        - lsif-go
+        - --no-animation
