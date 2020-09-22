@@ -7,7 +7,7 @@ indexJobs:
         - --no-animation
   - root: b/
     install:
-      indexer: alpine:latest
+      image: alpine:latest
       commands:
         - ls
         - '&&'
