@@ -10,13 +10,13 @@ indexJobs:
       indexer: alpine:latest
       commands:
         - ls
-        - &&
+        - '&&'
         - pwd
-        - &&
+        - '&&'
         - echo
-        - &&
+        - '&&'
         - "golly!"
-        - &&
+        - '&&'
         - ls /
     index:
       indexer: sourcegraph/lsif-go:latest
