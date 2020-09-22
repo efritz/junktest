@@ -17,7 +17,8 @@ indexJobs:
         - '&&'
         - "golly!"
         - '&&'
-        - ls /
+        - ls
+        - /
     index:
       indexer: sourcegraph/lsif-go:latest
       arguments:
