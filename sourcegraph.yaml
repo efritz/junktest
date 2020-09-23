@@ -4,29 +4,24 @@ indexJobs:
       indexer: sourcegraph/lsif-go:latest
       arguments:
         - lsif-go
+        - -vvv
         - --no-animation
   - root: b/
     install:
       image: alpine:latest
       commands:
         - ls
-        - '&&'
-        - pwd
-        - '&&'
-        - echo
-        - '&&'
-        - "golly!"
-        - '&&'
-        - ls
         - /
     index:
       indexer: sourcegraph/lsif-go:latest
       arguments:
         - lsif-go
+        - -vvv
         - --no-animation
   - root: c/
     index:
       indexer: sourcegraph/lsif-go:latest
       arguments:
         - lsif-go
+        - -vvv
         - --no-animation
