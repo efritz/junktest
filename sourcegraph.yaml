@@ -11,8 +11,8 @@ indexJobs:
     install:
       image: alpine:latest
       commands:
-        - ls
-        - /
+        - echo
+        - "hi"
     index:
       indexer: sourcegraph/lsif-go:latest
       arguments:
