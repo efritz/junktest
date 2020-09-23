@@ -6,6 +6,7 @@ indexJobs:
         - lsif-go
         - -vvv
         - --no-animation
+
   - root: b/
     install:
       image: alpine:latest
@@ -18,6 +19,7 @@ indexJobs:
         - lsif-go
         - -vvv
         - --no-animation
+
   - root: c/
     index:
       indexer: sourcegraph/lsif-go:latest
